@@ -436,9 +436,17 @@ html {
   
 }
 
-.category-item {
-  line-height: 1.7;
+.category-item a{
+  text-decoration: none;
+  padding: 10px;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-5);
+  color: var(--oxford-blue);
+  transition: var(--default-transition);
 }
+.category-item:not(:last-child) a { border-bottom: 1px solid hsla(0, 0%, 0%, 0.1); }
+
+.category-item a:hover { color: var(--red-orange-color-wheel); }
 
 
 .category-icon { width: 50px; }
