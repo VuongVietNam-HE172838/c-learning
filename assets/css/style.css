@@ -2,10 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 @codewithsadee 
- */
-
 
 
 
@@ -701,15 +697,5 @@ footer { background: var(--oxford-blue); }
 
 
 
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog-grid {
-  font-family: "Roboto" sans-serif;
-  font-size: 20px;
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
 
 
