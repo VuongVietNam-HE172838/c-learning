@@ -319,11 +319,12 @@ html {
 \*-----------------------------------*/
 
 .blog {
-  position: absolute;
-  
-  border-radius: 8px;
   position: relative;
+  width: 100%;
+  border-radius: 8px;
   margin-bottom: 200px;
+  left: 80px;
+  box-sizing: border-box;
   
 }
 
@@ -432,6 +433,12 @@ html {
     
   }
 
+  @media only screen and (max-width: 63.9375em) {
+    .blog {
+      left: 10px;
+      padding-right: 60px;
+    }
+  }
   
 
 /*-----------------------------------*\
