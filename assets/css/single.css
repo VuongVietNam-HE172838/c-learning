@@ -21,7 +21,9 @@ a {
   font: inherit;
 }
 
-img, span, a, ion-icon { display: block; }
+img, span, a, ion-icon { 
+  display: block; 
+}
 
 button {
   background: none;
@@ -338,6 +340,7 @@ html {
     word-spacing: 1px;
     text-align: justify;
     
+    
   }
 
 .blog-content .bullet-list {
@@ -349,6 +352,7 @@ html {
     list-style-type: disc;
     padding: 10px;
   }
+
 
 
   .sidenav {
@@ -432,7 +436,6 @@ html {
     background-color: var(--cultured);
     
   }
-
 /* tablet + pc  */
   @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     .blog {
@@ -440,17 +443,23 @@ html {
       padding-right: 60px;
     }
   }
-
 /* mobile */
   @media only screen and (max-width: 46em) {
     .blog {
-      left: -30px;
-      padding-right: -50px;
+    z-index: 1;
+    left: -60px;
+    flex-direction: column;
+    width: 120%;
+    padding-right: 0px;
     }
 
-    .blog .illustration-img {
+    
+
+    #vd-img {
       
-      padding-right: 1px;
+      display: flex;
+      height: 100%;
+      width: 100%;
     }
   }
   
