@@ -433,10 +433,24 @@ html {
     
   }
 
-  @media only screen and (max-width: 63.9375em) {
+/* tablet + pc  */
+  @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     .blog {
       left: 10px;
       padding-right: 60px;
+    }
+  }
+
+/* mobile */
+  @media only screen and (max-width: 46em) {
+    .blog {
+      left: -30px;
+      padding-right: -50px;
+    }
+
+    .blog .illustration-img {
+      
+      padding-right: 1px;
     }
   }
   
