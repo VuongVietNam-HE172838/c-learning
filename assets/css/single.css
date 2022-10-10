@@ -336,7 +336,7 @@ html {
   .blog-grid > .blog-content .blog-text {
     font-family: "Roboto", monospace;
     word-spacing: 1px;
-    
+    text-align: justify;
     
   }
 
