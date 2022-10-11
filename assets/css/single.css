@@ -353,7 +353,52 @@ html {
     padding: 10px;
   }
 
+  .blog-content .table {
+    border-collapse: collapse;
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: var(--oxford-blue);
+    z-index: 1;
+  }
 
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+  .blog-content .table .first-row th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(255, 245, 227);
+    color: var(--oxford-blue);
+
+  }
+
+  .blog-content .table th, td{
+    border: 0.5px solid var(--oxford-blue);
+    padding: 8px;
+  }
+
+  code {
+    font-family: "Consolas",monospace;
+    font-size: var(--fs-5);
+    background: #afb8c133;
+    color: #31353a;
+    padding: .2em .4em;
+    margin: 2px;
+    border-radius: 5px;
+  }
 
   .sidenav {
     width: 250px;
@@ -460,6 +505,10 @@ html {
       display: flex;
       height: 100%;
       width: 100%;
+    }
+
+    code {
+      font-size: 15px;
     }
   }
   
