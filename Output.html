@@ -83,114 +83,131 @@
       -->
 
     <section class="home" id="home">
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Output trong C
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+    
+            <p class="blog-text">
+              Ở bài trước, chúng ta đã nắm được các thức nhập dữ liệu trong lập trình C. Trong bài này chúng ta sẽ tìm hiểu
+              các hàm
+              chịu trách nhiệm về vấn đề đầu ra - <strong>Output</strong> của một chương trình C.
+    
+            </p>
+    
+            <p class="blog-text">
+              <br><code>printf()</code> là hàm phổ biến nhất để xuất dữ liệu của ngôn ngữ C. Các hàm khác ta sẽ học ở phần
+              kiến thức sau của
+              khóa học
+    
+            </p>
+    
+            <p class="blog-text">
+              <br>Hàm <code>printf()</code> được sử dụng để in ra các ký tự, chuỗi, các giá trị số nguyên, số thực hay số
+              thập phân,
+              bát phân (hệ cơ số 8)... và hiển thị lên màn hình console.
+            <ul style="list-style-type:square" class="bullet-list">
+    
+              <li>In ra một chuỗi kí tự</li>
+              <img id="vd-img" src="./assets/images/printf.png" alt="printf()">
+              <p><br>Kết quả</p>
+              <img id="vd-img" src="./assets/images/output-printf.png" alt="printf()">
+    
+              <li>In ra giá trị của biến</li>
+              <p><br>Trước tiên xác định kiểu dữ liệu cần in của biến</p>
+              <p><br></p>
+    
+              <table class="table">
+                <thead>
+                  <tr class="first-row">
+                    <th>Kiểu dữ liệu</th>
+                    <th>Kích thước</th>
+                  </tr>
+                </thead>
+    
+                <tbody class="table-body">
+                  <tr>
+                    <td>
+                      <code>%d</code>
+                    </td>
+                    <td>int</td>
+                  </tr>
+                  <tr>
+                    <td><code>%ld</code></td>
+                    <td>long</td>
+                  </tr>
+                  <tr>
+                    <td><code>%f</code></td>
+                    <td>float</td>
+                  </tr>
+                  <tr>
+                    <td><code>%lf</code></td>
+                    <td>double</td>
+                  </tr>
+                  <tr>
+                    <td><code>%c</code></td>
+                    <td>char</td>
+                  </tr>
+    
+                </tbody>
+              </table>
+    
+              <p><br>Ví dụ</p>
+              <img id="vd-img" src="./assets/images/printf-2.png" alt="printf()">
+              <p><br>Kết quả</p>
+              <img id="vd-img" src="./assets/images/output-printf-2.png" alt="printf()">
+    
+    
+            </ul>
+    
+    
+          </section>
 
-        
-        <div class="deco-shape shape-2">
-          <img src="./assets/images/shape-2.png" alt="art shape" width="55">
-        </div>
-        <div class="deco-shape shape-3">
-          <img src="./assets/images/shape-3.png" alt="art shape" width="120">
-        </div>
-        <div class="deco-shape shape-4">
-          <img src="./assets/images/shape-4.png" alt="art shape" width="30">
-        </div>
-
-        
-        <div class="blog">
-               <p class="section-subtitle">C cơ bản</p>
-
-          <h1 class="main-heading">
-            Output trong C
-          </h1>
-        
-          <article class="blog-grid">
-
-            <section class="blog-content">               
-               
-              <p class="blog-text">
-                Ở bài trước, chúng ta đã nắm được các thức nhập dữ liệu trong lập trình C. Trong bài này chúng ta sẽ tìm hiểu các hàm
-                chịu trách nhiệm về vấn đề đầu ra - <strong>Output</strong> của một chương trình C.
-                
-              </p>
-
-              <p class="blog-text">
-                <br><code>printf()</code> là hàm phổ biến nhất để xuất dữ liệu của ngôn ngữ C. Các hàm khác ta sẽ học ở phần kiến thức sau của
-                khóa học
-                
-              </p>
-
-              <p class="blog-text">
-                <br>Hàm <code>printf()</code> được sử dụng để in ra các ký tự, chuỗi, các giá trị số nguyên, số thực hay số thập phân,
-                bát phân (hệ cơ số 8)... và hiển thị lên màn hình console.
-                <ul style="list-style-type:square" class="bullet-list">
-                
-                    <li>In ra một chuỗi kí tự</li>
-                    <img id="vd-img" src="./assets/images/printf.png" alt="printf()">
-                    <p><br>Kết quả</p>
-                    <img id="vd-img" src="./assets/images/output-printf.png" alt="printf()">
-
-                    <li>In ra giá trị của biến</li>
-                    <p><br>Trước tiên xác định kiểu dữ liệu cần in của biến</p>
-                    <p><br></p>
-
-                    <table class="table">
-                        <thead>
-                            <tr class="first-row">
-                                <th>Kiểu dữ liệu</th>
-                                <th>Kích thước</th>                                
-                            </tr>
-                        </thead>
-        
-                        <tbody class="table-body">
-                            <tr>
-                                <td>
-                                    <code>%d</code>
-                                </td>
-                                <td>int</td>
-                            </tr>
-                            <tr>
-                                <td><code>%ld</code></td>
-                                <td>long</td>
-                            </tr>
-                            <tr>
-                                <td><code>%f</code></td>
-                                <td>float</td>
-                            </tr>
-                            <tr>
-                                <td><code>%lf</code></td>
-                                <td>double</td>
-                            </tr>
-                            <tr>
-                                <td><code>%c</code></td>
-                                <td>char</td>
-                            </tr>
-                            
-                        </tbody>
-                      </table>
-
-                      <p><br>Ví dụ</p>
-                      <img id="vd-img" src="./assets/images/printf-2.png" alt="printf()">
-                      <p><br>Kết quả</p>
-                      <img id="vd-img" src="./assets/images/output-printf-2.png" alt="printf()">
-
-              
-                </ul>
-
-              
-                </section>            
-              
-            </article> 
-        
-
-        </div>         
-
-
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="Input.html">Input</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href="arithmetic.html">Toán tử</a>
+              </div>
+            </div>
+          </div>
+    
+        </article>
+    
+    
+      </div>
+    
+    
     </section>
 
               
       
 
-    </section>
     <!-- <div class="sidenav">
       <button type="button" class="collapsible">sub sub sub sub title 1</button>
       <div class="subnav-item">
