@@ -83,154 +83,180 @@
       -->
 
     <section class="home" id="home">
-
-        
-        <div class="deco-shape shape-2">
-          <img src="./assets/images/shape-2.png" alt="art shape" width="55">
-        </div>
-        <div class="deco-shape shape-3">
-          <img src="./assets/images/shape-3.png" alt="art shape" width="120">
-        </div>
-        <div class="deco-shape shape-4">
-          <img src="./assets/images/shape-4.png" alt="art shape" width="30">
-        </div>
-
-        
-        <div class="blog">
-               <p class="section-subtitle">C cơ bản</p>
-
-          <h1 class="main-heading">
-            Cấu trúc chương trình trong C 
-          </h1>
-        
-          <article class="blog-grid">
-
-            <section class="blog-content">  
-                
-               
-              <p class="blog-text">
-                    Đoạn code bên dưới là một đoạn code cơ bản nhất cho mọi lập trình viên khi mới học C. Bạn hãy sao chép đoạn code bên dưới
-                    và chạy thử trong <strong>Dev C</strong>
-                
-              </p>
-
-              <p class="blog-text">
-                <br>Tại màn hình chính của <strong>Dev C</strong>, chọn <strong>File -> New -> Source File</strong>, hoặc tổ hợp <strong>Ctrl N</strong>
-                
-              </p>
-              
-              <div class="illustration-img">
-                <img id="vd-img" src="./assets/images/HelloWorld.png" alt="code-helloworld">
-                            
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Cấu trúc chương trình trong C
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+    
+    
+            <p class="blog-text">
+              Đoạn code bên dưới là một đoạn code cơ bản nhất cho mọi lập trình viên khi mới học C. Bạn hãy sao chép đoạn
+              code bên dưới
+              và chạy thử trong <strong>Dev C</strong>
+    
+            </p>
+    
+            <p class="blog-text">
+              <br>Tại màn hình chính của <strong>Dev C</strong>, chọn <strong>File -> New -> Source File</strong>, hoặc tổ
+              hợp <strong>Ctrl N</strong>
+    
+            </p>
+    
+            <div class="illustration-img">
+              <img id="vd-img" src="./assets/images/HelloWorld.png" alt="code-helloworld">
+    
             </div>
-
-                <p class="blog-text">
-                    <br>Nhấn <strong>F11</strong> để compile đoạn code
-                    <img id="vd-img" src="./assets/images/Ketqua_Helloworld.png" alt="code-helloworld">
-
-                </p>
-
-                <p class="blog-text">
-                    <br>Hãy cùng tìm hiểu các thành phần cơ bản có trong chương trình trên nhé
-                </p>
-
-                <ul style="list-style-type:square" class="bullet-list">
-                
-                    <li>
-                        <code>#include &lt;stdio.h&gt; </code>
-                        <ul>
-                            <li>
-                                Đây được gọi là dòng khai báo thư viện cho một chương trình C, #include là cú pháp còn tên thư viện sẽ nằm trong cặp dấu
-                                &lt;&gt;. Một chương trình C cơ bản luôn luôn cần thư viện stdio.h - là thư viện cơ bản và cốt lõi nhất.
-                            </li>
-
-                            <li class="bullet-list">
-                                Thư viện là nơi định nghĩa các câu lệnh mà mình sẽ viết bên dưới cho máy tính hiểu và có thể chạy được những gì mình viết.
-                            </li>
-                        </ul>
-                        
-                    </li>
-                
-                    <li>
-                        <code>int main() { }</code>
-                        <ul>
-                           <li class="bullet_list">
-                                Thường được gọi là hàm main - hay là hàm chính - khi chương trình của bạn chạy nó sẽ bắt đầu chạy từ hàm này và nó chỉ chạy 
-                                những đoạn code có trong này. Do đó mọi chương trình C đều phải tồn tại một hàm main.
-                            </li>
-
-                            <li class="bullet_list">
-                                Tất cả code phải được viết trong cặp dấu ngoặc nhọn { } của hàm main và được xem là code của hàm main.
-                            </li> 
-                        </ul>
-
-                    </li>
-
-                    <li>
-                        <code>printf("Hello World!\n");</code>
-                        <ul>
-                           <li class="bullet_list">
-                            Đây là dòng lệnh in ra màn hình dòng chữ Hello World. Dòng này kết thúc với dấu ; (trong ngôn ngữ C tất cả dòng lệnh đều phải 
-                            kết thúc bằng dấu ;).
-                            </li>
-
-                            <li class="bullet_list">
-                                Tạm hiểu câu lệnh printf() là câu lệnh in ra - hiển thị ra một chuỗi mà bạn truyển vào ( ).
-                            </li> 
-
-                            <li class="bullet_list">
-                                Chuỗi truyền vào cần nằm trong cặp dấu nháy kép " " để chương trình hiểu được đó là một đoạn văn bản.
-                            </li> 
-
-                            <li class="bullet_list">
-                                Phần \n trong chuỗi là một dạng format để báo rằng chúng ra muốn xuống dòng tại đó.
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li>
-                        <code>return 0;</code>
-                        <ul>
-                           <li class="bullet_list">
-                            Câu lệnh này tạm hiểu là để kết thúc viết code trong hàm main, nằm cuối cùng trong hàm main để kết thúc chương trình.
-                            </li>
-
-                        </ul>
-
-                    </li>
-                
-                
+    
+            <p class="blog-text">
+              <br>Nhấn <strong>F11</strong> để compile đoạn code
+              <img id="vd-img" src="./assets/images/Ketqua_Helloworld.png" alt="code-helloworld">
+    
+            </p>
+    
+            <p class="blog-text">
+              <br>Hãy cùng tìm hiểu các thành phần cơ bản có trong chương trình trên nhé
+            </p>
+    
+            <ul style="list-style-type:square" class="bullet-list">
+    
+              <li>
+                <code>#include &lt;stdio.h&gt; </code>
+                <ul>
+                  <li>
+                    Đây được gọi là dòng khai báo thư viện cho một chương trình C, #include là cú pháp còn tên thư viện sẽ
+                    nằm trong cặp dấu
+                    &lt;&gt;. Một chương trình C cơ bản luôn luôn cần thư viện stdio.h - là thư viện cơ bản và cốt lõi nhất.
+                  </li>
+    
+                  <li class="bullet-list">
+                    Thư viện là nơi định nghĩa các câu lệnh mà mình sẽ viết bên dưới cho máy tính hiểu và có thể chạy được
+                    những gì mình viết.
+                  </li>
                 </ul>
-
-                <p class="blog-text">
-                    <br>Qua đoạn code trên, ta có thể hình dung ra 3 nội dung chính của một chương trình trong C, đó là <strong>Khai báo thư viện</strong>
-                    , nội dung code trong hàm <strong>Main</strong> và câu lệnh <code>return 0;</code> kết thúc hàm <strong>Main</strong>.                    
-                </p>            
-                
-                <p class="blog-text">                    
-                    <br><strong>Lưu ý:</strong> chương trình vẫn có thể chạy mà không cần <code>return 0;</code>. Tuy nhiên để đảm bảo format
-                    của một chương trình C, các bạn nên tạo thói quen sử dụng đoạn code trên, phục vụ cho các phần kiến thức về sau của khóa học !
-                </p>
-
-              
-                </section>          
-              
-            
-              
-                </article>       
-        
-
-        </div>         
-
-
-    </section>
-
-              
+    
+              </li>
+    
+              <li>
+                <code>int main() { }</code>
+                <ul>
+                  <li class="bullet_list">
+                    Thường được gọi là hàm main - hay là hàm chính - khi chương trình của bạn chạy nó sẽ bắt đầu chạy từ hàm
+                    này và nó chỉ chạy
+                    những đoạn code có trong này. Do đó mọi chương trình C đều phải tồn tại một hàm main.
+                  </li>
+    
+                  <li class="bullet_list">
+                    Tất cả code phải được viết trong cặp dấu ngoặc nhọn { } của hàm main và được xem là code của hàm main.
+                  </li>
+                </ul>
+    
+              </li>
+    
+              <li>
+                <code>printf("Hello World!\n");</code>
+                <ul>
+                  <li class="bullet_list">
+                    Đây là dòng lệnh in ra màn hình dòng chữ Hello World. Dòng này kết thúc với dấu ; (trong ngôn ngữ C tất
+                    cả dòng lệnh đều phải
+                    kết thúc bằng dấu ;).
+                  </li>
+    
+                  <li class="bullet_list">
+                    Tạm hiểu câu lệnh printf() là câu lệnh in ra - hiển thị ra một chuỗi mà bạn truyển vào ( ).
+                  </li>
+    
+                  <li class="bullet_list">
+                    Chuỗi truyền vào cần nằm trong cặp dấu nháy kép " " để chương trình hiểu được đó là một đoạn văn bản.
+                  </li>
+    
+                  <li class="bullet_list">
+                    Phần \n trong chuỗi là một dạng format để báo rằng chúng ra muốn xuống dòng tại đó.
+                  </li>
+    
+                </ul>
+    
+              </li>
+    
+              <li>
+                <code>return 0;</code>
+                <ul>
+                  <li class="bullet_list">
+                    Câu lệnh này tạm hiểu là để kết thúc viết code trong hàm main, nằm cuối cùng trong hàm main để kết thúc
+                    chương trình.
+                  </li>
+    
+                </ul>
+    
+              </li>
+    
+    
+            </ul>
+    
+            <p class="blog-text">
+              <br>Qua đoạn code trên, ta có thể hình dung ra 3 nội dung chính của một chương trình trong C, đó là
+              <strong>Khai báo thư viện</strong>
+              , nội dung code trong hàm <strong>Main</strong> và câu lệnh <code>return 0;</code> kết thúc hàm
+              <strong>Main</strong>.
+            </p>
+    
+            <p class="blog-text">
+              <br><strong>Lưu ý:</strong> chương trình vẫn có thể chạy mà không cần <code>return 0;</code>. Tuy nhiên để đảm
+              bảo format
+              của một chương trình C, các bạn nên tạo thói quen sử dụng đoạn code trên, phục vụ cho các phần kiến thức về
+              sau của khóa học !
+            </p>
+    
+    
+          </section>
+    
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="gioi_thieu.html">Giới thiệu ngôn ngữ C</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href="variable.html">Biến</a>
+              </div>
+            </div>
+          </div>
+    
+        </article>
+    
+    
+      </div>
       
 
+    
+    
     </section>
+
+    
+    
+
+
     <!-- <div class="sidenav">
       <button type="button" class="collapsible">sub sub sub sub title 1</button>
       <div class="subnav-item">
