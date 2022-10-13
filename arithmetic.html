@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLearning - Học C là dễ</title>
+  <link rel="shortcut icon" href="./assets/images/Sixtho-white.png">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/single.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <script>src="index.html"</script>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--
+    - main container
+  -->
+
+    <div class="container">
+
+        <!--
+      - #HEADER
+    -->
+
+        <header>
+
+            <nav class="navbar">
+
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="./assets/images/C-Learning-logo.png" alt="CLearning Logo" width="192" height="46">
+                    </a>
+                </div>
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="#home">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#category">Tài nguyên</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Liên hệ</a>
+                    </li>
+
+                </ul>
+
+
+
+                <button class="nav-toggle-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <!--
+        - #HOME SECTION
+      -->
+
+            <section class="home" id="home">
+
+
+                <div class="deco-shape shape-2">
+                    <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+                </div>
+                <div class="deco-shape shape-3">
+                    <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+                </div>
+                <div class="deco-shape shape-4">
+                    <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+                </div>
+
+
+                <div class="blog">
+                    <p class="section-subtitle">C cơ bản</p>
+
+                    <h1 class="main-heading">
+                        Toán tử trong C
+                    </h1>
+
+                    <article class="blog-grid">
+
+                        <section class="blog-content">
+
+
+                            <p class="blog-text">
+                                Trong C tồn tại một vài phép toán như sau
+
+                            </p>
+
+                            <h4><br>Toán tử số học</h4>
+
+                            <p class="blog-text">
+                                Là các phép toán cơ bản <strong>cộng</strong>, <strong>trừ</strong>,
+                                <strong>nhân</strong>, <strong>chia</strong>
+
+                            </p>
+
+                            <p><br></p>
+
+                            <table class="table">
+                                <thead>
+                                    <tr class="first-row">
+                                        <th>Định dạng</th>
+                                        <th>Phép toán</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td>
+                                            <code>+</code>
+                                        </td>
+                                        <td>Phép cộng - Addition</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-</code></td>
+                                        <td>Phép trừ - Subtraction</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>*</code></td>
+                                        <td>Phép nhân - Multiplication</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/</code></td>
+                                        <td>Phép chia - Division</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>%</code></td>
+                                        <td>Phép chia lấy dư - Modulo hoặc Remainder</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <p><br></p>
+
+
+                            <h4><br>Toán tử quan hệ </h4>
+
+                            <p class="blog-text">
+                                Là các toán tử nhằm mục đích so sánh, sẽ so sánh giá trị của 2 phần tử (Biến) rồi trả về
+                                kết quả True hay False,
+                                thường được dùng trong các câu lệnh điều kiện.
+
+                            </p>
+                            
+                            <p><br></p>
+
+
+                            <table class="table">
+                                <thead>
+                                    <tr class="first-row">
+                                        <th>Định dạng</th>
+                                        <th>Kết quả</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td>
+                                            <code>&lt</code> (nhỏ hơn)
+                                        </td>
+                                        <td>A <strong>&lt</strong> B is <i>true</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt=</code> (nhỏ hơn hoặc bằng)</td>
+                                        <td>A <strong>&lt=</strong> B is <i>true</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&gt</code> (lớn hơn)</td>
+                                        <td>A <strong>&gt</strong> B is <i>false</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&gt=</code> (lớn hơn hoặc bằng)</td>
+                                        <td>A <strong>&gt</strong> B is <i>false</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>==</code> (bằng ?)</td>
+                                        <td>A <strong>bằng</strong> B is <i>false</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>!=</code> (khác ? | không bằng ?)</td>
+                                        <td>A <strong>khác</strong> B is <i>true</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <p><br></p>
+
+                            <h4>Toán tử Logic</h4>
+
+                            <p class="blog-text">
+                                <br>Là các toán tử <strong>AND</strong>, <strong>OR</strong>, <strong>NOT</strong> trong toán Boolean.
+                                Các bạn sẽ được học thêm về toán Boolean ở các môn khác như toán rời rạc,... tuy nhiên trong khóa học này
+                                chúng ta sẽ chỉ tìm hiểu về 3 toán tử trên.
+
+                            </p>
+
+                            <ul style="list-style-type:square" class="bullet-list">
+                
+                                <li>
+                                    <code>&&</code> (AND) trả về <code>true</code> khi <strong>cả 2</strong> toán hạng đều đúng. Ngược lại trả về False.
+                                </li>
+                                <img id="vd-img" src="./assets/images/AND.png" alt="AND">
+                            
+                                <li>
+                                    <code>||</code> (or) trả về <code>true</code> khi <strong>ít nhất một trong 2</strong> toán hạng đúng. Ngược lại trả về false.
+                                </li>
+                                <img id="vd-img" src="./assets/images/OR.png" alt="OR">
+                            
+                                <li>
+                                    <code>!</code> (not) trả về <code>true</code> khi toán hạng đứng sau dấu "!" <strong>sai</strong>. Ngược lại trả về false.
+                                </li>
+                                <img id="vd-img" src="./assets/images/NOT.png" alt="NOT">
+                            
+                            </ul>
+
+                            <h4>Toán tử tăng giảm</h4>
+
+                            <p class="blog-text">
+                                <br>Trong các ngôn ngữ lập trình còn một loại toán tử nữa đó là toán tử tăng giảm, thể hiện sự tăng hoặc giảm 1 đơn vị
+                                của biến.
+
+                            </p>
+
+                            <ul style="list-style-type:square" class="bullet-list">
+                
+                                <li>
+                                    <code>++</code> là toán tử tăng
+                                    <p><br><code>++i</code> tương đương với <code>i = i + 1</code></p>
+                                </li>
+                            
+                                <li>
+                                    <code>--</code> là toán tử giảm
+                                    <p><br><code>--i</code> tương đương với <code>i = i - 1</code></p>
+                                </li>
+                            
+                                <li>
+                                    Có 2 cách viết ++i và i++ nhưng ý nghĩa của chúng khác nhau:
+                                    <p><br><code>++i</code> thì giá trị của <strong>i</strong> được tăng lên ngay lập tức. </p>
+                                    <p><br><code>i++</code> thì giá trị của <strong>i</strong> chỉ được tăng ở các dòng lệnh sau đó. </p>
+                                    <p><br><i>Tương tự với</i> <code>--i</code> <i>và</i> <code>i--</code></p>
+                                </li>
+                                
+                            
+                            </ul>
+
+
+                        </section>
+
+                        <div class="post-changing">
+                            <div class="post-changing-nav post-left">
+                              <span class="header-left">Bài trước</span>
+                              <div class="post-title">
+                                <a href="Output.html">Output</a>
+                              </div>
+                            </div>
+                            <div class="post-changing-nav post-right">
+                              <span class="header-right">Bài tiếp theo</span>
+                              <div class="post-title">
+                                <a href="ep_kieu.html">Ép kiểu trong C</a>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                    </article>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+            </section>
+            <!-- <div class="sidenav">
+      <button type="button" class="collapsible">sub sub sub sub title 1</button>
+      <div class="subnav-item">
+        <ul id="list">
+          <li><a href="#home">link 1</a></li>
+          <li><a href="#home">link 2</a></li>
+          <li><a href="#home">link 3</a></li>
+          <li><a href="#home">link 4</a></li>
+        
+        </ul>
+
+      </div>
+
+      <button type="button" class="collapsible">sub title 2</button>
+      <div class="subnav-item">
+        <a href="#home">link 1</a>
+        <a href="#home">link 2</a>
+        <a href="#home">link 3</a>
+        <a href="#home">link 4</a>
+
+      </div>
+
+      <button type="button" class="collapsible">sub title 3</button>
+      <div class="subnav-item">
+        <a href="#home">link 1</a>
+        <a href="#home">link 2</a>
+        <a href="#home">link 3</a>
+        <a href="#home">link 4</a>
+
+        </div>
+      
+
+    </div> -->
+        </main>
+        <!--
+      - #FOOTER
+    -->
+
+        <footer>
+
+            <div class="footer-grid">
+
+                <div class="grid-item">
+
+                    <div class="footer-logo">
+                        <img src="./assets/images/C-Learning-logofooter.png" alt="educator logo white" width="192"
+                            height="46">
+                    </div>
+
+
+
+                    <p class="footer-text">
+                        CLearning là dự án của team SixThố - SE1735, thuộc môn SSG104, với mục đích giúp đỡ các
+                        sinh viên nhập môn lập trình C một cách dễ dàng nhất có thể. Do đây là dự án đầu tiên của
+                        nhóm, cũng như là của cá nhân mình - Vương Viết Nam - nên mọi thiếu sót về công nghệ mong mọi
+                        người
+                        thông cảm. Mình xin cảm ơn !
+                    </p>
+
+
+                </div>
+
+                <ul class="grid-item">
+
+
+                    <h4 class="item-heading">Our Link</h4>
+
+                    <li class="list-item">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#about">About Us</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#contact">Contact Us</a>
+                    </li>
+
+                    <li class="social-link">
+                        <a href="https://www.facebook.com/profile.php?id=100086707472799" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <p class="copyright">
+                Copyright © 2022
+            </p>
+
+        </footer>
+
+    </div>
+
+
+
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
