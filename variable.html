@@ -83,197 +83,215 @@
       -->
 
     <section class="home" id="home">
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Biến trong C
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+            <h2 class="sub-heading">
+              Kiểu dữ liệu trong C
+            </h2>
+    
+            <p class="blog-text">
+              Kiểu dữ liệu là một cách phân loại dữ liệu cho chương trình hiểu cũng như cho lập trình viên sử dụng
+    
+            </p>
+    
+            <p class="blog-text">
+              <br>Ví dụ:
+              <br><strong>Tuổi</strong> sẽ là kiểu số nguyên
+              <br><strong>Các chữ cái</strong> là kiểu ký tự
+    
+            </p>
+    
+            <p class="blog-text">
+              <br>Một kiểu dữ liệu sẽ bao gồm kích thước và loại giá trị mà nó chỉ định. Có 6 kiểu dữ liệu được sử dụng
+              nhiều nhất trong C:
+    
+            </p>
+    
+            <p><br></p>
+    
+            <table class="table">
+              <thead>
+                <tr class="first-row">
+                  <th>Kiểu dữ liệu</th>
+                  <th>Kích thước</th>
+                  <th>Mô tả</th>
+                </tr>
+              </thead>
+    
+              <tbody class="table-body">
+                <tr>
+                  <td>
+                    <code>int</code>
+                  </td>
+                  <td>4 bytes</td>
+                  <td>Lưu trữ toàn bộ số nguyên từ -2,147,483,648 to 2,147,483,647</td>
+                </tr>
+                <tr>
+                  <td><code>long</code></td>
+                  <td>4 bytes</td>
+                  <td>Lưu trữ toàn bộ số nguyên từ -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+                </tr>
+                <tr>
+                  <td><code>float</code></td>
+                  <td>4 bytes</td>
+                  <td>Lưu trữ số thập phân. Đủ để lưu trữ 6 đến 7 chữ số thập phân sau dấu phẩy</td>
+                </tr>
+                <tr>
+                  <td><code>double</code></td>
+                  <td>4 bytes</td>
+                  <td>Lưu trữ số thập phân. Đủ để lưu trữ 15 chữ số thập phân sau dấu phẩy</td>
+                </tr>
+                <tr>
+                  <td><code>char</code></td>
+                  <td>4 bytes</td>
+                  <td>Lưu trữ một ký tự/chữ cái hoặc giá trị trong bảng mã ASCII</td>
+                </tr>
+    
+              </tbody>
+            </table>
+    
+            <p><br></p>
+    
+            <h2 class="sub-heading">
+              Biến
+            </h2>
+    
+            <h4><br>Biến là:</h4>
+            <p class="blog-text">
+    
+            <ul style="list-style-type:square" class="bullet-list">
+    
+              <li>Nơi lưu trữ tạm thời các giá trị </li>
+    
+              <li>Sở hữu một kiểu dữ liệu xác định</li>
+    
+              <li>Có thể thay đổi giá trị biến</li>
+    
+            </ul>
+            <strong>VD:</strong> int tuoi , double chieu_dai , ...
+            <br>Một biến sẽ có 3 thành phần:
+    
+            </p>
+            <img id="vd-img" src="./assets/images/tphan-bien.png" alt="thành phần biến" width="80%">
+    
+            <h4>Nguyên tắc đặt tên biến:</h4>
+    
+            <ul style="list-style-type:square" class="bullet-list">
+    
+              <li>Đặt tên cho biến bằng những ký tự a-z ; A-Z ; 0-9.</li>
+    
+              <li>Không được sử dụng khoảng trắng, thay vào đó dùng gạch dưới ‘_’
+                <br>Ex:
+              </li>
+              <img id="vd-img" src="./assets/images/vidu-bien.png" alt="ví dụ biến">
+              <li>Không được sử dụng chữ cái mang dấu (ví dụ: è é ê,...)</li>
+    
+              <li>Không được đặt tên trùng với cái từ khóa (ví dụ: int, float, return,...)</li>
+              <li><strong>Lưu ý:</strong> trong ngôn ngữ C không có sự khác nhau giữa chữ thường và in hoa.
+                <br><code>chieu_rong</code>, <code>CHIEU_RONG</code>, <code>Chieu_Rong</code> là 3 biến khác nhau.
+              </li>
+    
+    
+            </ul>
+    
+            <h4>Hằng số</h4>
+    
+            <p class="blog-text">
+              <br>Để khởi tạo một biến có giá trị không thể thay đổi, bạn có thể sử dụng 2 cách sau:
+            <ul style="list-style-type:square" class="bullet-list">
+    
+              <li>Sử dụng từ khóa <code>const</code></li>
+              <li>Sử dụng bộ tiền xử lý <code>#define</code> ( không phổ biến )</li>
+    
+            </ul>
+    
+            </p>
+            <img id="vd-img" src="./assets/images/const.png" alt="const">
+    
+            <h4><br>Biến toàn cục</h4>
+    
+            <p class="blog-text">
+            <ul style="list-style-type:square" class="bullet-list">
+              <li>Là biến được khai báo ở bên ngoài tất cả các khối code của hàm main</li>
+              <li>Có thể được sử dụng ở mọi hàm</li>
+              <li>Tồn tại cho đến khi chương trình kết thúc</li>
+              <img id="vd-img" src="./assets/images/bien-toancuc.png" alt="biến toàn cục">
+    
+            </ul>
+    
+            </p>
+    
+            <h4><br>Biến cục bộ</h4>
+    
+            <p class="blog-text">
+            <ul style="list-style-type:square" class="bullet-list">
+              <li>Là biến được khai báo trong thân một hàm</li>
+              <li>Chỉ tồn tại và chỉ sử dụng trong hàm mà nó được khai báo
+                <strong>Lưu ý:</strong> nếu chúng ta sử dụng cùng một tên biến cho biến cục bộ và biến toàn cục thì biến cục
+                bộ sẽ được ưu tiên hơn.
+              </li>
+              <img id="vd-img" src="./assets/images/bien-cucbo.png" alt="Biến cục bộ">
+              <li>Kết quả <code>1</code></li>
+              <img id="vd-img" src="./assets/images/ketqua-biencucbo.png" alt="kết quả biến cục bộ">
+    
+            </ul>
+    
+            </p>
+    
+            <p class="blog-text">
+              <br>Ngoài ra còn một số vấn đề như <strong>Phạm vi của biến,...</strong> tuy nhiên trong lập trình C cơ bản
+              của trường hiếm
+              khi áp dụng việc khai báo biến ngoài hàm <code>Main(){}</code>
+            </p>
+    
+          </section>
 
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="cau_truc_ctrinh.html">Cấu trúc chương trình C</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href="Input.html">Input</a>
+              </div>
+            </div>
+          </div>
+    
+        </article>
         
-        <div class="deco-shape shape-2">
-          <img src="./assets/images/shape-2.png" alt="art shape" width="55">
-        </div>
-        <div class="deco-shape shape-3">
-          <img src="./assets/images/shape-3.png" alt="art shape" width="120">
-        </div>
-        <div class="deco-shape shape-4">
-          <img src="./assets/images/shape-4.png" alt="art shape" width="30">
-        </div>
-
-        
-        <div class="blog">
-               <p class="section-subtitle">C cơ bản</p>
-
-          <h1 class="main-heading">
-            Biến trong C
-          </h1>
-        
-          <article class="blog-grid">
-
-            <section class="blog-content">  
-                <h2 class="sub-heading">
-                    Kiểu dữ liệu trong C
-                </h2>
-               
-              <p class="blog-text">
-                Kiểu dữ liệu là một cách phân loại dữ liệu cho chương trình hiểu cũng như cho lập trình viên sử dụng
-                
-              </p>
-
-              <p class="blog-text">
-                <br>Ví dụ: 
-                <br><strong>Tuổi</strong> sẽ là kiểu số nguyên
-                <br><strong>Các chữ cái</strong> là kiểu ký tự 
-                
-              </p>
-
-              <p class="blog-text">
-                <br>Một kiểu dữ liệu sẽ bao gồm kích thước và loại giá trị mà nó chỉ định. Có 6 kiểu dữ liệu được sử dụng nhiều nhất trong C:
-                
-              </p>
-
-              <p><br></p>
-
-              <table class="table">
-                <thead>
-                    <tr class="first-row">
-                        <th>Kiểu dữ liệu</th>
-                        <th>Kích thước</th>
-                        <th>Mô tả</th>
-                    </tr>
-                </thead>
-
-                <tbody class="table-body">
-                    <tr>
-                        <td>
-                            <code>int</code>
-                        </td>
-                        <td>4 bytes</td>
-                        <td>Lưu trữ toàn bộ số nguyên từ -2,147,483,648 to 2,147,483,647</td>
-                    </tr>
-                    <tr>
-                        <td><code>long</code></td>
-                        <td>4 bytes</td>
-                        <td>Lưu trữ toàn bộ số nguyên từ -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
-                    </tr>
-                    <tr>
-                        <td><code>float</code></td>
-                        <td>4 bytes</td>
-                        <td>Lưu trữ số thập phân. Đủ để lưu trữ 6 đến 7 chữ số thập phân sau dấu phẩy</td>
-                    </tr>
-                    <tr>
-                        <td><code>double</code></td>
-                        <td>4 bytes</td>
-                        <td>Lưu trữ số thập phân. Đủ để lưu trữ 15 chữ số thập phân sau dấu phẩy</td>
-                    </tr>
-                    <tr>
-                        <td><code>char</code></td>
-                        <td>4 bytes</td>
-                        <td>Lưu trữ một ký tự/chữ cái hoặc giá trị trong bảng mã ASCII</td>
-                    </tr>
-                    
-                </tbody>
-              </table>
-
-              <p><br></p>
-
-                <h2 class="sub-heading">
-                    Biến
-                </h2>
-
-                <h4><br>Biến là:</h4>
-                <p class="blog-text">
-                                       
-                    <ul style="list-style-type:square" class="bullet-list">
-                
-                        <li>Nơi lưu trữ tạm thời các giá trị </li>
-                    
-                        <li>Sở hữu một kiểu dữ liệu xác định</li>
-                    
-                        <li>Có thể thay đổi giá trị biến</li>
-                    
-                    </ul>
-                    <strong>VD:</strong> int tuoi , double chieu_dai , ...
-                    <br>Một biến sẽ có 3 thành phần:                   
-                
-                </p>
-                <img id="vd-img" src="./assets/images/tphan-bien.png" alt="thành phần biến" width="80%">
-
-                <h4>Nguyên tắc đặt tên biến:</h4>
-
-                <ul style="list-style-type:square" class="bullet-list">
-                
-                    <li>Đặt tên cho biến bằng những ký tự a-z ; A-Z ; 0-9.</li>
-                
-                    <li>Không được sử dụng khoảng trắng, thay vào đó dùng gạch dưới ‘_’
-                        <br>Ex:                        
-                    </li>
-                        <img id="vd-img" src="./assets/images/vidu-bien.png" alt="ví dụ biến">
-                    <li>Không được sử dụng chữ cái mang dấu (ví dụ: è é ê,...)</li>
-
-                    <li>Không được đặt tên trùng với cái từ khóa (ví dụ: int, float, return,...)</li>
-                    <li><strong>Lưu ý:</strong> trong ngôn ngữ C không có sự khác nhau giữa chữ thường và in hoa.
-                    <br><code>chieu_rong</code>, <code>CHIEU_RONG</code>, <code>Chieu_Rong</code> là 3 biến khác nhau.
-                    </li>
-
-                
-                </ul>
-
-                <h4>Hằng số</h4>
-
-                <p class="blog-text">
-                    <br>Để khởi tạo một biến có giá trị không thể thay đổi, bạn có thể sử dụng 2 cách sau:
-                    <ul style="list-style-type:square" class="bullet-list">
-                
-                        <li>Sử dụng từ khóa <code>const</code></li>
-                        <li>Sử dụng bộ tiền xử lý <code>#define</code> ( không phổ biến )</li>                          
-                    
-                    </ul>
-                    
-                </p>
-                <img id="vd-img" src="./assets/images/const.png" alt="const">
-
-                <h4><br>Biến toàn cục</h4>
-
-                <p class="blog-text">                    
-                    <ul style="list-style-type:square" class="bullet-list">                
-                        <li>Là biến được khai báo ở bên ngoài tất cả các khối code của hàm main</li>
-                        <li>Có thể được sử dụng ở mọi hàm</li>
-                        <li>Tồn tại cho đến khi chương trình kết thúc</li>
-                        <img id="vd-img" src="./assets/images/bien-toancuc.png" alt="biến toàn cục">
-                    
-                    </ul>
-                    
-                </p>
-
-                <h4><br>Biến cục bộ</h4>
-
-                <p class="blog-text">                    
-                    <ul style="list-style-type:square" class="bullet-list">                
-                        <li>Là biến được khai báo trong thân một hàm</li>
-                        <li>Chỉ tồn tại và chỉ sử dụng trong hàm mà nó được khai báo
-                            <strong>Lưu ý:</strong> nếu chúng ta sử dụng cùng một tên biến cho biến cục bộ và biến toàn cục thì biến cục bộ sẽ được ưu tiên hơn.
-                        </li>
-                        <img id="vd-img" src="./assets/images/bien-cucbo.png" alt="Biến cục bộ">
-                        <li>Kết quả <code>1</code></li>
-                        <img id="vd-img" src="./assets/images/ketqua-biencucbo.png" alt="kết quả biến cục bộ">
-                    
-                    </ul>
-                    
-                </p>
-
-                <p class="blog-text">
-                    <br>Ngoài ra còn một số vấn đề như <strong>Phạm vi của biến,...</strong> tuy nhiên trong lập trình C cơ bản của trường hiếm
-                    khi áp dụng việc khai báo biến ngoài hàm <code>Main(){}</code>
-                </p>
-              
-                </section>    
-
-                </article>       
-
-        </div>         
-
+    
+      </div>
+    
     </section>
 
               
       
 
-    </section>
     <!-- <div class="sidenav">
       <button type="button" class="collapsible">sub sub sub sub title 1</button>
       <div class="subnav-item">
