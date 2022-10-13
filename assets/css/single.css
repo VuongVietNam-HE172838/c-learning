@@ -324,7 +324,7 @@ html {
   position: relative;
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   left: 80px;
   box-sizing: border-box;
   
@@ -501,17 +501,109 @@ html {
     
 
     #vd-img {
-      
       display: flex;
       height: 100%;
       width: 100%;
     }
 
+    
     code {
       font-size: 15px;
     }
   }
+
+
+/*-----------------------------------*\
+  #POST CHANGING
+\*-----------------------------------*/
   
+.post-changing {
+    margin-top: 50px;
+    border-radius: 10px;
+    background: #f3f4f6;
+    padding: 8px 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.post-changing .post-left {
+  align-items: flex-start;
+}
+
+.post-changing .post-changing-nav {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-changing .post-left .header-left {
+    color: #1f2937;
+    font-size: 12px;
+    line-height: 20px;
+    font-style: italic;
+    letter-spacing: .2px;
+    padding-left: 1.7rem;
+}
+
+.post-changing .post-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-changing .post-title a {
+    color: #1f2937;
+    font-size: 18px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: .2px;
+    padding-left: 1.7rem;
+
+    background-color: transparent;
+
+    text-decoration: none;
+}
+
+.post-changing .post-right .header-right {
+    font-size: 12px;
+    color: #1f2937;
+    line-height: 20px;
+    font-style: italic;
+    letter-spacing: .2px;
+    text-align: right;
+    padding-right: 1.7rem;
+}
+
+.post-changing .post-right .post-title a {
+  padding-right: 1.7rem;
+}
+
+/* Mobile  */
+@media only screen and (max-width: 46em) {
+  .post-changing .post-title a {
+    padding-left: 0rem;
+  }
+
+  .post-changing .post-right .post-title a {
+    padding-right: 0rem;
+  }
+
+  .post-changing .post-right .header-right {
+    padding-right: 0rem;
+  }
+
+  .post-changing .post-left .header-left {
+    padding-left: 0rem;
+  }
+
+
+}
+
+
+
+
 
 /*-----------------------------------*\
   #FOOTER
