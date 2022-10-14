@@ -439,9 +439,9 @@ html {
   .sidenav {
     width: 250px;
     border-radius: 15px;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 200px;
+    bottom: 4600px;
     left: 850px;
     overflow-x: hidden;
     padding: 8px 0;
