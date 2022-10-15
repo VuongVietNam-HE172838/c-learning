@@ -263,7 +263,7 @@
   .home {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .home::before {
