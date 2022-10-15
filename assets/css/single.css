@@ -440,9 +440,8 @@ html {
     width: 250px;
     border-radius: 15px;
     position: relative;
+    left: 150px;
     z-index: 1;
-    bottom: 4600px;
-    left: 850px;
     overflow-x: hidden;
     padding: 8px 0;
     background-color: #fff9f6;
@@ -536,6 +535,7 @@ html {
     }
   }
 
+
 /*-----------------------------------*\
   #POST CHANGING
 \*-----------------------------------*/
@@ -602,6 +602,8 @@ html {
 .post-changing .post-right .post-title a {
   padding-right: 1.7rem;
 }
+
+
 
 /* Mobile  */
 @media only screen and (max-width: 46em) {
