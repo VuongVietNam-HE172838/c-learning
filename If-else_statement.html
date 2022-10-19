@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLearning - Học C là dễ</title>
+  <link rel="shortcut icon" href="./assets/images/Sixtho-white.png">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/single.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <script>src="index.html"</script>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./assets/images/C-Learning-logo.png" alt="CLearning Logo" width="192" height="46">
+          </a>
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="#home">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#category">Tài nguyên</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Liên hệ</a>
+          </li>
+
+        </ul>
+
+        
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+    <section class="home" id="home">
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Câu lệnh điều kiện If-Else
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+    
+            <h2 class="sub-heading">
+              
+            </h2>
+
+            <p class="blog-text">
+              Mở rộng hơn so với <code>if</code> statement, <code>if else</code> statement bổ sung thêm một điều kiện phụ thuộc vào điều kiện ban đầu.
+            </p>
+
+            <ul style="list-style-type:square" class="bullet-list">
+              <li>Nếu điều kiện trả về true thì các câu lệnh bên trong phần thân của if được thực thi và các câu lệnh bên trong phần thân của else bị bỏ qua.</li>
+              <li>Nếu điều kiện trả về false thì các câu lệnh bên trong phần thân của if bị bỏ qua và các câu lệnh trong else được thực thi.</li>
+              <img id="vd-img" src="./assets/images/vidu-if-else.png" alt="ví dụ if-else">
+            </ul>
+
+            <p class="blog-text">
+              <br>Flowchart của cấu trúc if else trong C có quy trình hoạt động như sau:
+            </p>
+            <img id="vd-img" src="./assets/images/flowchart-if-else.png" alt="flowchart if-else">
+
+            <span><br><strong>Ví dụ minh họa:</strong></span>
+
+            <img id="vd-img" src="./assets/images/minhhoa-if-else.png" alt="minh họa If-else" width="100%">
+
+            <span><br><strong>Kết quả:</strong></span>
+            
+            <img id="vd-img" src="./assets/images/ketqua-if-else.png" alt="kết quả If-else">
+
+    
+          </section>
+
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="If_statement.html">Câu điều kiện If</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href="cau_truc_lenh_long_nhau.html">Cấu trúc lệnh lồng nhau</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </article>
+    
+
+      </div>
+
+      <div class="sidenav">
+
+        <p class="sidenav-header">Đổi bài</p>
+  
+        <button type="button" class="collapsible">Giới thiệu</button>
+        <div class="subnav-item">
+          <ul id="list">
+            <li><a href="gioi_thieu.html">Giới thiệu ngôn ngữ C</a></li>
+          
+          </ul>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Căn bản trong C</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ctrinh.html">Cấu trúc chương trình trong C</a>
+          <a href="variable.html">Biến</a>
+          <a href="Input.html">Input trong C</a>
+          <a href="Output.html">Output trong C</a>
+          <a href="arithmetic.html">Các loại toán tử</a>
+          <a href="ep_kieu.html">Ép kiểu</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Câu điều kiện trong C</button>
+        <div class="subnav-item">
+          <a href="If_statement.html">If</a>
+          <a href="If-else_statement.html">if-else</a>
+          <a href="cau_truc_lenh_long_nhau.html">Cấu trúc lệnh lồng nhau</a>
+          <a href="switch_case.html">Switch-case</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Vòng lặp</button>
+        <div class="subnav-item">
+          <a href="#home">While</a>
+          <a href="#home">Do-While</a>
+          <a href="#home">Câu lệnh "break"</a>
+          <a href="#home">For</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Hàm</button>
+        <div class="subnav-item">
+          <a href="#home">Cấu trúc Hàm</a>
+          <a href="#home">Tham số và đối số</a>
+          <a href="#home">Giá trị trả về của Hàm</a>
+          <a href="#home">Phân loại Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Mảng</button>
+        <div class="subnav-item">
+          <a href="#home">Giới thiệu mảng</a>
+          <a href="#home">Mảng đa chiều</a>
+          <a href="#home">Mảng ký tự</a>
+          <a href="#home">Truyền mảng vào Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Con trỏ</button>
+        <div class="subnav-item">
+          <a href="#home">Giới thiệu con trỏ - Pointer</a>
+          <a href="#home">Thao tác với con trỏ</a>
+          <a href="#home">Quan hệ giữa Mảng & Con trỏ</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Đọc - Ghi file</button>
+        <div class="subnav-item">
+          <a href="#home">Phân loại file</a>
+          <a href="#home">Các thao tác với file</a>
+          <a href="#home">Đọc ghi file văn bản</a>
+          <a href="#home">Dọc ghi file Binary</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Thực hành</button>
+        <div class="subnav-item">
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+  
+        </div>
+        
+  
+      </div>
+
+    </section>
+
+    
+
+
+    
+    
+    </main>
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-grid">
+
+        <div class="grid-item">
+
+          <div class="footer-logo">
+            <img src="./assets/images/C-Learning-logofooter.png" alt="educator logo white" width="192" height="46">
+          </div>
+
+          
+          
+          <p class="footer-text">
+            CLearning là dự án của team SixThố - SE1735, thuộc môn SSG104, với mục đích giúp đỡ các 
+            sinh viên nhập môn lập trình C một cách dễ dàng nhất có thể. Do đây là dự án đầu tiên của
+            nhóm, cũng như là của cá nhân mình - Vương Viết Nam - nên mọi thiếu sót về công nghệ mong mọi người
+            thông cảm. Mình xin cảm ơn !
+          </p>
+
+
+        </div>
+        
+        <ul class="grid-item">
+              
+
+          <h4 class="item-heading">Our Link</h4>
+
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#about">About Us</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#contact">Contact Us</a>
+          </li>
+
+          <li class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100086707472799" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+          </li>
+
+        </ul>
+        
+      </div>
+
+      <p class="copyright">
+        Copyright © 2022 
+      </p>
+
+    </footer>
+
+  </div>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
