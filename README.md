@@ -8,6 +8,10 @@ For FPT University students, especially who enroll PRF192 subject, I hope to pro
 user-friendly interface. The official project facebook page [CLearning](https://www.facebook.com/profile.php?id=100086707472799)
 will provide answers to knowledge-related queries.
 
+## Technology
+
+This project mainly base on pure HTML, CSS, and animation JS
+
 ### Dependencies
 
 This website runs stably on:
