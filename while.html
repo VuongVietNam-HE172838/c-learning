@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLearning - Học C là dễ</title>
+  <link rel="shortcut icon" href="./assets/images/Sixtho-white.png">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/single.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <script>src="index.html"</script>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./assets/images/C-Learning-logo.png" alt="CLearning Logo" width="192" height="46">
+          </a>
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="#home">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#category">Tài nguyên</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Liên hệ</a>
+          </li>
+
+        </ul>
+
+        
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+    <section class="home" id="home">
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Vòng lặp Do
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+    
+            <h2 class="sub-heading">
+              
+            </h2>
+
+            <p class="blog-text">
+              Trong lập trình, các vòng lặp được sử dụng để lặp lại một đoạn code cho đến khi một 
+              điều kiện cụ thể được đáp ứng.
+            </p>
+
+            <ul style="list-style-type:square" class="bullet-list">
+                <span>Lập trình C có ba loại vòng lặp</span>
+                <li>For</li>
+                <li>While</li>
+                <li>Do-While</li>
+            </ul>
+
+            <p class="blog-text">
+                <br>Trong bài hướng dẫn này, chúng ta sẽ cùng tìm hiểu về các loại vòng lặp này, cách chúng được khai 
+                báo cũng như sự hoạt động của các loại vòng lặp này.
+            </p>
+
+            <ul style="list-style-type:square" class="bullet-list">
+                <span>Đầu tiên là về câu lệnh while:</span>
+                <li> 
+                    Vòng lặp while cũng được sử dụng để lặp lại một khối câu lệnh. Nó sẽ kiểm tra điều kiện trước khi bắt đầu 
+                    vòng lặp để quyết định xem có thực hiện vòng lặp hay không.</li>
+                <li>
+                    Khối câu lệnh bên trong vòng lặp sẽ được thực hiện 1 hoặc nhiều lần cho đến khi kiểm tra điều kiện trả về 
+                    bằng false thì sẽ kết thúc vòng lặp.
+                </li>
+            </ul>
+
+            <span>
+                <br>Với những trường hợp chỉ xác định được điều kiện dừng ban đầu mà chưa rõ số lượng vòng lặp cần thực hiện, các 
+                bạn nên sử dụng vòng lặp <code>While</code>.
+            </span>
+
+            <span><br><strong>Cấu trúc của vòng lặp while như sau:</strong></span>
+            <img id="vd-img" src="./assets/images/while-syntax.png" alt="while syntax">
+
+            <span><br><strong>Cách hoạt động của vòng lặp while</strong></span>
+            <img id="vd-img" src="./assets/images/while-flowchart.png" alt="while flowchart">
+
+            <span><br><strong>Ví dụ</strong></span>
+            <img id="vd-img" src="./assets/images/vidu-while.png" alt="vidu-while" width="80%">
+
+            <span><br><strong>Kết quả</strong></span>
+            <img id="vd-img" src="./assets/images/ketqua-while.png" alt="ketqua-while" width="80%">
+
+    
+          </section>
+
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="switch_case.html">Switch-case</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href="do_while.html">Vòng lặp Do-While</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </article>
+    
+
+      </div>
+
+      <div class="sidenav">
+
+        <p class="sidenav-header">Đổi bài</p>
+  
+        <button type="button" class="collapsible">Giới thiệu</button>
+        <div class="subnav-item">
+          <ul id="list">
+            <li><a href="gioi_thieu.html">Giới thiệu ngôn ngữ C</a></li>
+          
+          </ul>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Căn bản trong C</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ctrinh.html">Cấu trúc chương trình trong C</a>
+          <a href="variable.html">Biến</a>
+          <a href="Input.html">Input trong C</a>
+          <a href="Output.html">Output trong C</a>
+          <a href="arithmetic.html">Các loại toán tử</a>
+          <a href="ep_kieu.html">Ép kiểu</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Câu điều kiện trong C</button>
+        <div class="subnav-item">
+          <a href="If_statement.html">If</a>
+          <a href="If-else_statement.html">if-else</a>
+          <a href="cau_truc_lenh_long_nhau.html">Cấu trúc lệnh lồng nhau</a>
+          <a href="switch_case.html">Switch-case</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Vòng lặp</button>
+        <div class="subnav-item">
+          <a href="while.html">While</a>
+          <a href="do_while.html">Do-While</a>
+          <a href="break.html">Câu lệnh "break"</a>
+          <a href="for.html">For</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Hàm</button>
+        <div class="subnav-item">
+          <a href="#home">Cấu trúc Hàm</a>
+          <a href="#home">Tham số và đối số</a>
+          <a href="#home">Giá trị trả về của Hàm</a>
+          <a href="#home">Phân loại Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Mảng</button>
+        <div class="subnav-item">
+          <a href="#home">Giới thiệu mảng</a>
+          <a href="#home">Mảng đa chiều</a>
+          <a href="#home">Mảng ký tự</a>
+          <a href="#home">Truyền mảng vào Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Con trỏ</button>
+        <div class="subnav-item">
+          <a href="#home">Giới thiệu con trỏ - Pointer</a>
+          <a href="#home">Thao tác với con trỏ</a>
+          <a href="#home">Quan hệ giữa Mảng & Con trỏ</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Đọc - Ghi file</button>
+        <div class="subnav-item">
+          <a href="#home">Phân loại file</a>
+          <a href="#home">Các thao tác với file</a>
+          <a href="#home">Đọc ghi file văn bản</a>
+          <a href="#home">Dọc ghi file Binary</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Thực hành</button>
+        <div class="subnav-item">
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+  
+        </div>
+        
+  
+      </div>
+
+    </section>
+
+    
+
+
+    
+    
+    </main>
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-grid">
+
+        <div class="grid-item">
+
+          <div class="footer-logo">
+            <img src="./assets/images/C-Learning-logofooter.png" alt="educator logo white" width="192" height="46">
+          </div>
+
+          
+          
+          <p class="footer-text">
+            CLearning là dự án của team SixThố - SE1735, thuộc môn SSG104, với mục đích giúp đỡ các 
+            sinh viên nhập môn lập trình C một cách dễ dàng nhất có thể. Do đây là dự án đầu tiên của
+            nhóm, cũng như là của cá nhân mình - Vương Viết Nam - nên mọi thiếu sót về công nghệ mong mọi người
+            thông cảm. Mình xin cảm ơn !
+          </p>
+
+
+        </div>
+        
+        <ul class="grid-item">
+              
+
+          <h4 class="item-heading">Our Link</h4>
+
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#about">About Us</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#contact">Contact Us</a>
+          </li>
+
+          <li class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100086707472799" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+          </li>
+
+        </ul>
+        
+      </div>
+
+      <p class="copyright">
+        Copyright © 2022 
+      </p>
+
+    </footer>
+
+  </div>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
