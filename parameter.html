@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLearning - Học C là dễ</title>
+  <link rel="shortcut icon" href="./assets/images/Sixtho-white.png">
+
+  
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/single.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <script>src="index.html"</script>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./assets/images/C-Learning-logo.png" alt="CLearning Logo" width="192" height="46">
+          </a>
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="#home">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#category">Tài nguyên</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Liên hệ</a>
+          </li>
+
+        </ul>
+
+        
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+    <section class="home" id="home">
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Tham số và Đối số
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+    
+            <h2 class="sub-heading">
+                Tham số | Parameter
+            </h2>
+
+            <p class="blog-text">
+                <strong>Tham số (parameter)</strong> là các biến có kiểu và tên được sử dụng để nhận các giá trị truyền vào(Đối số- argument) để xử lý trong hàm. 
+                Tham số được sử dụng khi chúng ta khai báo hàm trong C.
+            </p>
+            <img id="vd-img" src="./assets/images/vidu-parameter.png" alt="ví dụ tham số" width="100%">
+
+            <p class="blog-text">
+                <br>Các tham số sử dụng trong hàm đều cần chỉ định kiểu và tên của nó. Và kiểu, tên của tham số cần phải giống với kiểu, tên của loại 
+                đối tượng mà nó sẽ nhận khi đối tượng đó được truyền vào hàm.
+            </p>
+
+            <p class="blog-text">
+                <br>Ví dụ, nếu bạn muốn truyền giá trị là một số thuộc kiểu int, thì bắt buộc là tham số khai báo trong hàm cũng phải thuộc kiểu int. Tương tự nếu đối 
+                tượng truyền vào là một char, hay một chuỗi, bạn cũng cần phải chỉ định kiểu char hay char[] tương ứng.
+            </p>
+
+            <h2 class="sub-heading">
+                <br>Đối số | Argument
+            </h2>
+
+            <p class="blog-text">
+                <br><strong>Đối số (argument)</strong> là các giá trị thực được truyền vào khi gọi hàm. Đối số được truyền vào hàm qua sẽ được gán vào tham số, và được sử 
+                dụng khi chúng ta gọi hàm trong C.
+            </p>
+
+            <img id="vd-img" src="./assets/images/vidu-argument.png" alt="ví dụ argument" width="100%">
+
+            <p class="blog-text">
+                <br>Có nhiều loại giá trị có thể truyền vào hàm khi chúng ta gọi hàm, ví dụ như biến, con trỏ và cấu trúc chẳng hạn. Với mỗi loại đối tượng như vậy sẽ có kiểu 
+                dữ liệu khác nhau, và chúng ta cần cần chú ý phải truyền đối tượng vào hàm có kiểu dữ liệu giống với kiểu của tham số tương ứng trong hàm dùng để nhận nó.
+            </p>
+
+            <p class="blog-text">
+                <br>Ví dụ nếu khi khai báo hàm, chúng ta sử dụng một tham số có kiểu int, thì chúng ta cũng chỉ có thể truyền đối số có cùng kiểu int vào hàm mà thôi. Nếu không 
+                thì hàm không chạy được và lỗi sẽ bị xảy ra.
+            </p>
+
+
+          </section>
+
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="cau_truc_ham.html">Cấu trúc hàm</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href="return-value.html">Giá trị trả về</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </article>
+    
+
+      </div>
+
+      <div class="sidenav">
+
+        <p class="sidenav-header">Đổi bài</p>
+  
+        <button type="button" class="collapsible">Giới thiệu</button>
+        <div class="subnav-item">
+          <ul id="list">
+            <li><a href="gioi_thieu.html">Giới thiệu ngôn ngữ C</a></li>
+          
+          </ul>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Căn bản trong C</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ctrinh.html">Cấu trúc chương trình trong C</a>
+          <a href="variable.html">Biến</a>
+          <a href="Input.html">Input trong C</a>
+          <a href="Output.html">Output trong C</a>
+          <a href="arithmetic.html">Các loại toán tử</a>
+          <a href="ep_kieu.html">Ép kiểu</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Câu điều kiện trong C</button>
+        <div class="subnav-item">
+          <a href="If_statement.html">If</a>
+          <a href="If-else_statement.html">if-else</a>
+          <a href="cau_truc_lenh_long_nhau.html">Cấu trúc lệnh lồng nhau</a>
+          <a href="switch_case.html">Switch-case</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Vòng lặp</button>
+        <div class="subnav-item">
+          <a href="while.html">While</a>
+          <a href="do_while.html">Do-While</a>
+          <a href="break.html">Câu lệnh "break"</a>
+          <a href="for.html">For</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Hàm</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ham.html">Cấu trúc Hàm</a>
+          <a href="parameter.html">Tham số và đối số</a>
+          <a href="return-value.html">Giá trị trả về của Hàm</a>
+          <a href="phanloai.html">Phân loại Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Mảng</button>
+        <div class="subnav-item">
+          <a href="#home">Giới thiệu mảng</a>
+          <a href="#home">Mảng đa chiều</a>
+          <a href="#home">Mảng ký tự</a>
+          <a href="#home">Truyền mảng vào Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Con trỏ</button>
+        <div class="subnav-item">
+          <a href="#home">Giới thiệu con trỏ - Pointer</a>
+          <a href="#home">Thao tác với con trỏ</a>
+          <a href="#home">Quan hệ giữa Mảng & Con trỏ</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Đọc - Ghi file</button>
+        <div class="subnav-item">
+          <a href="#home">Phân loại file</a>
+          <a href="#home">Các thao tác với file</a>
+          <a href="#home">Đọc ghi file văn bản</a>
+          <a href="#home">Dọc ghi file Binary</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Thực hành</button>
+        <div class="subnav-item">
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+  
+        </div>
+        
+  
+      </div>
+
+    </section>
+
+    
+
+
+    
+    
+    </main>
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-grid">
+
+        <div class="grid-item">
+
+          <div class="footer-logo">
+            <img src="./assets/images/C-Learning-logofooter.png" alt="educator logo white" width="192" height="46">
+          </div>
+
+          
+          
+          <p class="footer-text">
+            CLearning là dự án của team SixThố - SE1735, thuộc môn SSG104, với mục đích giúp đỡ các 
+            sinh viên nhập môn lập trình C một cách dễ dàng nhất có thể. Do đây là dự án đầu tiên của
+            nhóm, cũng như là của cá nhân mình - Vương Viết Nam - nên mọi thiếu sót về công nghệ mong mọi người
+            thông cảm. Mình xin cảm ơn !
+          </p>
+
+
+        </div>
+        
+        <ul class="grid-item">
+              
+
+          <h4 class="item-heading">Our Link</h4>
+
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#about">About Us</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#contact">Contact Us</a>
+          </li>
+
+          <li class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100086707472799" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+          </li>
+
+        </ul>
+        
+      </div>
+
+      <p class="copyright">
+        Copyright © 2022 
+      </p>
+
+    </footer>
+
+  </div>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

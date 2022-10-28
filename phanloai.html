@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLearning - Học C là dễ</title>
+  <link rel="shortcut icon" href="./assets/images/Sixtho-white.png">
+
+  
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/single.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <script>src="index.html"</script>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./assets/images/C-Learning-logo.png" alt="CLearning Logo" width="192" height="46">
+          </a>
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="#home">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#category">Tài nguyên</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Liên hệ</a>
+          </li>
+
+        </ul>
+
+        
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+    <section class="home" id="home">
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Phân loại Hàm trong C
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+    
+            <p class="blog-text">
+                Sau khi đã biết các định nghĩa sử dụng trong hàm C, sau đây chúng ta sẽ cùng tìm hiểu các loại hàm trong C nhé.
+            </p>
+
+            <p class="blog-text">
+                <br>Trong C có 3 loại hàm, đó là <strong>hàm main</strong> trong C, <strong>các hàm có sẵn</strong> trong C, và 
+                <strong>hàm C do người dùng định nghĩa</strong>.
+            </p>
+
+            <h2 class="sub-heading">
+                <br>Hàm main
+            </h2>
+
+            <p class="blog-text">
+                <br>Trong ngôn ngữ C, một chương trình là một tập hợp các hàm, với mỗi hàm trong chương trình là “tập hợp các 
+                quy trình” cần xử lý. Và trong các hàm đó thì hàm main() trong C là <strong>hàm đầu tiên được thực thi</strong> khi bắt đầu chạy một chương trình C.
+            </p>
+            <img id="vd-img" src="./assets/images/vidu-function.png" alt="ví dụ hàm" width="100%">
+            
+            <h2 class="sub-heading">
+                <br>Các hàm có sẵn
+            </h2>
+
+            <p class="blog-text">
+                <br>Các hàm có sẵn trong C là các hàm được chuẩn bị sẵn trong các thư viện chuẩn của C. Các hàm này được tích hợp bên trong các header file, ví dụ 
+                như hàm <code>strlen()</code> tích hợp trong header file <strong>[string.h]</strong> chẳng hạn.
+            </p>
+
+            <p class="blog-text">
+                <br>Các hàm này mặc dù đã được chuẩn bị sẵn, nhưng chúng ta chỉ có thể thực thi chúng trong chương trình C, nếu chúng ta gọi chúng bên trong hàm 
+                <code>main()</code> mà thôi.
+            </p>
+
+            <p class="blog-text">
+                <br>Để sử dụng được các hàm có sẵn này, chúng ta cần phải thêm (include) các header file này vào đầu mỗi chương trình.
+            </p>
+
+            <p class="blog-text">
+                <br>Ví dụ, các hàm như hàm <code>printf()</code>, hàm <code>scanf()</code> v.v.. đều là các hàm có sẵn trong tích hợp trong header file <strong>[stdio.h]</strong>, hay hàm strlen() lại được 
+                tích hợp trong header file <strong>[string.h]</strong>, và chúng ta cần include các file này trong chương trình như sau:
+            </p>
+
+            <img id="vd-img" src="./assets/images/vidu2-function.png" alt="ví dụ 2 hàm" width="100%">
+
+            <p class="blog-text">
+                <br>Tuy nhiên cũng có những lúc chúng ta cần tạo ra hàm mà <strong>không</strong> trả về bất cứ giá trị nào từ nó cả. Lúc này, thay vì chỉ định kiểu 
+                cho giá trị trả về, chúng ta sẽ dùng tới <code>void trong C</code>, có tác dụng <strong>không trả giá trị về từ hàm</strong>.
+            </p>
+            
+            <span>Kết quả:</span>
+            <img id="vd-img" src="./assets/images/ketqua-function.png" alt="kết quả function" width="100%">
+
+
+            <h2 class="sub-heading">
+                <br>Hàm do người dùng định nghĩa
+            </h2>
+
+
+            <p class="blog-text">
+                <br><strong>Hàm C do người dùng định nghĩa (user-defined functions)</strong> là các hàm mà chúng ta tự mình tạo ra bằng cách khai báo chúng trong chương trình. Sau khi khai báo hàm, chúng ta có thể sử dụng 
+                chúng trực tiếp trong chương trình bằng cách gọi chúng tại bất kỳ thời điểm nào mà chúng ta muốn.
+            </p>
+
+            <p class="blog-text">
+                <br>Hàm C do người dùng định nghĩa có ưu điểm rất lớn, đó là sự tự do điều chỉnh hàm theo ý mà bạn muốn, bởi vì hàm là do bạn tự tạo ra, tự bạn thiết kế và làm chủ nó.
+            </p>
+
+            <p class="blog-text">
+                <br>Cách khai báo hàm trong C cũng khá là đơn giản, chúng ta viết kiểu dữ liệu trả về từ hàm trước, sau đó đến tên hàm, rồi kiểu và tên biến sử dụng trong hàm, và cuối cùng là các xử lý trong hàm nằm giữa 
+                cặp ngoặc nhọn <code>{}</code>.
+            </p>
+            
+            <span>Ví dụ một hàm tính tổng:</span>
+            <img id="vd-img" src="./assets/images/vidu3-function.png" alt="ví dụ 3 function" width="100%">
+
+            <p class="blog-text">
+                <br>Cách sử dụng hàm C do người dùng định nghĩa cũng giống như các hàm khác, sau khi bạn đã khai báo hàm xong, chỉ cần gọi tên hàm khi cần sử dụng là xong.
+            </p>
+
+            <img id="vd-img" src="./assets/images/vidu4-function.png" alt="ví dụ 4 function" width="100%">
+
+
+
+          </section>
+
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="return-value.html">Giá trị trả về</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+
+          
+        </article>
+    
+
+      </div>
+
+      <div class="sidenav">
+
+        <p class="sidenav-header">Đổi bài</p>
+  
+        <button type="button" class="collapsible">Giới thiệu</button>
+        <div class="subnav-item">
+          <ul id="list">
+            <li><a href="gioi_thieu.html">Giới thiệu ngôn ngữ C</a></li>
+          
+          </ul>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Căn bản trong C</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ctrinh.html">Cấu trúc chương trình trong C</a>
+          <a href="variable.html">Biến</a>
+          <a href="Input.html">Input trong C</a>
+          <a href="Output.html">Output trong C</a>
+          <a href="arithmetic.html">Các loại toán tử</a>
+          <a href="ep_kieu.html">Ép kiểu</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Câu điều kiện trong C</button>
+        <div class="subnav-item">
+          <a href="If_statement.html">If</a>
+          <a href="If-else_statement.html">if-else</a>
+          <a href="cau_truc_lenh_long_nhau.html">Cấu trúc lệnh lồng nhau</a>
+          <a href="switch_case.html">Switch-case</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Vòng lặp</button>
+        <div class="subnav-item">
+          <a href="while.html">While</a>
+          <a href="do_while.html">Do-While</a>
+          <a href="break.html">Câu lệnh "break"</a>
+          <a href="for.html">For</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Hàm</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ham.html">Cấu trúc Hàm</a>
+          <a href="parameter.html">Tham số và đối số</a>
+          <a href="return-value.html">Giá trị trả về của Hàm</a>
+          <a href="phanloai.html">Phân loại Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Mảng</button>
+        <div class="subnav-item">
+          <a href="#home">Giới thiệu mảng</a>
+          <a href="#home">Mảng đa chiều</a>
+          <a href="#home">Mảng ký tự</a>
+          <a href="#home">Truyền mảng vào Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Con trỏ</button>
+        <div class="subnav-item">
+          <a href="#home">Giới thiệu con trỏ - Pointer</a>
+          <a href="#home">Thao tác với con trỏ</a>
+          <a href="#home">Quan hệ giữa Mảng & Con trỏ</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Đọc - Ghi file</button>
+        <div class="subnav-item">
+          <a href="#home">Phân loại file</a>
+          <a href="#home">Các thao tác với file</a>
+          <a href="#home">Đọc ghi file văn bản</a>
+          <a href="#home">Dọc ghi file Binary</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Thực hành</button>
+        <div class="subnav-item">
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+          <a href="#home">NaN</a>
+  
+        </div>
+        
+  
+      </div>
+
+    </section>
+
+    
+
+
+    
+    
+    </main>
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-grid">
+
+        <div class="grid-item">
+
+          <div class="footer-logo">
+            <img src="./assets/images/C-Learning-logofooter.png" alt="educator logo white" width="192" height="46">
+          </div>
+
+          
+          
+          <p class="footer-text">
+            CLearning là dự án của team SixThố - SE1735, thuộc môn SSG104, với mục đích giúp đỡ các 
+            sinh viên nhập môn lập trình C một cách dễ dàng nhất có thể. Do đây là dự án đầu tiên của
+            nhóm, cũng như là của cá nhân mình - Vương Viết Nam - nên mọi thiếu sót về công nghệ mong mọi người
+            thông cảm. Mình xin cảm ơn !
+          </p>
+
+
+        </div>
+        
+        <ul class="grid-item">
+              
+
+          <h4 class="item-heading">Our Link</h4>
+
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#about">About Us</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#contact">Contact Us</a>
+          </li>
+
+          <li class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100086707472799" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+          </li>
+
+        </ul>
+        
+      </div>
+
+      <p class="copyright">
+        Copyright © 2022 
+      </p>
+
+    </footer>
+
+  </div>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
