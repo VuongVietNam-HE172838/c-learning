@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLearning - Học C là dễ</title>
+  <link rel="shortcut icon" href="./assets/images/Sixtho-white.png">
+
+  
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/single.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <script>src="index.html"</script>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./assets/images/C-Learning-logo.png" alt="CLearning Logo" width="192" height="46">
+          </a>
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="#home">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#category">Tài nguyên</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Liên hệ</a>
+          </li>
+
+        </ul>
+
+        
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+    <section class="home" id="home">
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Các thao tác với file
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+
+            <p class="blog-text">
+                Trong ngôn ngữ lập trình C, có một số thao tác chính khi làm việc với file, 
+                bao gồm cả file văn bản và file nhị phân:
+            </p>
+            <ul style="list-style-type:square" class="bullet-list">
+                <li>Tạo mới một file</li>
+                <li>Mở một file đã có</li>
+                <li>Đóng file đang mở</li>
+            </ul>
+
+            <h2 class="sub-heading">
+                <br>Khai báo file
+            </h2>
+
+            <img id="vd-img" src="./assets/images/file2-1.png" alt="ví dụ file2-1">
+            
+            <p class="blog-text">
+                <br>Khi làm việc với file, bạn cần khai báo 1 con trỏ kiểu FILE. Việc khai báo này là cần 
+                thiết để có sự kết nối giữa chương trình của bạn và tập tin mà bạn cần thao tác.
+            </p>
+
+            <h2 class="sub-heading">
+                <br>Thao tác mở file
+            </h2>
+
+            <p class="blog-text">
+                <br>Để đọc ghi file trong C cũng như trong mọi ngôn ngữ lập trình, việc đầu tiên bạn cần làm 
+                là mở file mà bạn muốn làm việc. Trong ngôn ngữ lập trình C, chúng ta có thể mở file bằng 
+                cách sử dụng hàm <code>fopen()</code> trong thư viện <code>stdio.h</code> như sau:
+            </p>
+
+            <img id="vd-img" src="./assets/images/file2-2.png" alt="ví dụ file2-2">
+
+            <p class="blog-text">
+                <br>Trong đó <code>mode</code> là một tham số chúng ta cần chỉ định.
+            </p>
+
+            <span><br>Ví dụ:</span>
+            <img id="vd-img" src="./assets/images/file2-3.png" alt="ví dụ file2-3">
+
+            <p class="blog-text">
+                Giả sử tập tin <strong>newprogram.txt</strong> chưa có trong thư mục <strong>E:\cprogram</strong>. Ví dụ đầu 
+                tiên với <code>mode = "w"</code> sẽ cho phép chương trình tự động tạo ra file <strong>newprogram.txt</strong> 
+                nếu nó chưa có. Và sau đó mở file này lên nhưng chương trình chỉ có thể ghi dữ liệu 
+                vào mà không thể đọc.
+            </p>
+            <ul style="list-style-type:square" class="bullet-list">
+                <li>Mode là w chỉ cho phép chương trình ghi(nếu đã có dữ liệu thì ghi đè) nội dung của file.</li>
+                <li>
+                    Với ví dụ thứ 2, mode là rb cho phép chương trình mở 1 file nhị phân đã có sẵn oldprogram.bin. 
+                    Với trường hợp này, chương trình của bạn chỉ có thể đọc file và không thể ghi nội dung vào file.
+                </li>
+            </ul>
+
+            <h2 class="sub-heading">
+                <br>Thao tác đóng file
+            </h2>
+
+            <span><br>Khi làm việc với tập tin hoàn tất, kể cả là file nhị phân hay file văn bản. Bạn cần đóng file sau khi làm việc với nó xong.</span>
+            <img id="vd-img" src="./assets/images/file2-4.png" alt="ví dụ file2-4">
+
+            <p class="blog-text">
+                <br>Việc đóng file đang mở có thể được thực hiện bằng cách dùng hàm <code>fclose()</code>.
+            </p>
+
+      
+          </section>
+
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="file1.html">Phân loại file</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href="file3.html">Đọc ghi file văn bản</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </article>
+    
+
+      </div>
+
+      <div class="sidenav">
+
+        <p class="sidenav-header">Đổi bài</p>
+  
+        <button type="button" class="collapsible">Giới thiệu</button>
+        <div class="subnav-item">
+          <ul id="list">
+            <li><a href="gioi_thieu.html">Giới thiệu ngôn ngữ C</a></li>
+          
+          </ul>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Căn bản trong C</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ctrinh.html">Cấu trúc chương trình trong C</a>
+          <a href="variable.html">Biến</a>
+          <a href="Input.html">Input trong C</a>
+          <a href="Output.html">Output trong C</a>
+          <a href="arithmetic.html">Các loại toán tử</a>
+          <a href="ep_kieu.html">Ép kiểu</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Câu điều kiện trong C</button>
+        <div class="subnav-item">
+          <a href="If_statement.html">If</a>
+          <a href="If-else_statement.html">if-else</a>
+          <a href="cau_truc_lenh_long_nhau.html">Cấu trúc lệnh lồng nhau</a>
+          <a href="switch_case.html">Switch-case</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Vòng lặp</button>
+        <div class="subnav-item">
+          <a href="while.html">While</a>
+          <a href="do_while.html">Do-While</a>
+          <a href="break.html">Câu lệnh "break"</a>
+          <a href="for.html">For</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Hàm</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ham.html">Cấu trúc Hàm</a>
+          <a href="parameter.html">Tham số và đối số</a>
+          <a href="return-value.html">Giá trị trả về của Hàm</a>
+          <a href="phanloai.html">Phân loại Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Mảng</button>
+        <div class="subnav-item">
+          <a href="array.html">Giới thiệu mảng</a>
+          <a href="multi-array.html">Mảng đa chiều</a>
+          <a href="string-array.html">Mảng ký tự</a>
+          <a href="array-function.html">Truyền mảng vào Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Con trỏ</button>
+        <div class="subnav-item">
+          <a href="pointer.html">Giới thiệu con trỏ - Pointer</a>
+          <a href="pointer-operation.html">Thao tác với con trỏ</a>
+          <a href="pointer-array.html">Quan hệ giữa Mảng & Con trỏ</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Đọc - Ghi file</button>
+        <div class="subnav-item">
+          <a href="file1.html">Phân loại file</a>
+          <a href="file2.html">Các thao tác với file</a>
+          <a href="file3.html">Đọc ghi file văn bản</a>
+          <a href="file4.html">Dọc ghi file Binary</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Thực hành</button>
+        <div class="subnav-item">
+          <a href="practice1.html">Ex1</a>
+          <a href="practice2.html">Ex2</a>
+          <a href="practice3.html">Ex3</a>
+          <a href="practice4.html">Ex4</a>
+          <a href="practice5.html">Ex5</a>
+          <a href="practice6.html">Ex6</a>
+  
+        </div>
+        
+  
+      </div>
+
+    </section>
+
+    
+
+
+    
+    
+    </main>
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-grid">
+
+        <div class="grid-item">
+
+          <div class="footer-logo">
+            <img src="./assets/images/C-Learning-logofooter.png" alt="educator logo white" width="192" height="46">
+          </div>
+
+          
+          
+          <p class="footer-text">
+            CLearning là dự án của team SixThố - SE1735, thuộc môn SSG104, với mục đích giúp đỡ các 
+            sinh viên nhập môn lập trình C một cách dễ dàng nhất có thể. Do đây là dự án đầu tiên của
+            nhóm, cũng như là của cá nhân mình - Vương Viết Nam - nên mọi thiếu sót về công nghệ mong mọi người
+            thông cảm. Mình xin cảm ơn !
+          </p>
+
+
+        </div>
+        
+        <ul class="grid-item">
+              
+
+          <h4 class="item-heading">Our Link</h4>
+
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#about">About Us</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#contact">Contact Us</a>
+          </li>
+
+          <li class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100086707472799" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+          </li>
+
+        </ul>
+        
+      </div>
+
+      <p class="copyright">
+        Copyright © 2022 
+      </p>
+
+    </footer>
+
+  </div>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

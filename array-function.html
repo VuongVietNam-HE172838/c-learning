@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLearning - Học C là dễ</title>
+  <link rel="shortcut icon" href="./assets/images/Sixtho-white.png">
+
+  
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/single.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <script>src="index.html"</script>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./assets/images/C-Learning-logo.png" alt="CLearning Logo" width="192" height="46">
+          </a>
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="#home">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#category">Tài nguyên</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Liên hệ</a>
+          </li>
+
+        </ul>
+
+        
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+    <section class="home" id="home">
+    
+    
+      <div class="deco-shape shape-2">
+        <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+      </div>
+      <div class="deco-shape shape-3">
+        <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+      </div>
+      <div class="deco-shape shape-4">
+        <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+      </div>
+    
+    
+      <div class="blog">
+        <p class="section-subtitle">C cơ bản</p>
+    
+        <h1 class="main-heading">
+          Truyền mảng vào hàm
+        </h1>
+    
+        <article class="blog-grid">
+    
+          <section class="blog-content">
+    
+            <p class="blog-text">
+                <strong>3 hoạt dộng</strong> chính với hàm và mảng: 
+            </p>
+
+            <ul style="list-style-type:square" class="bullet-list">
+                <li>Pass Individual Array Elements (Truyền các phần tử mảng riêng lẻ)</li>
+                <li>Pass Arrays to Functions (Truyền Mảng đến Hàm)</li>
+                <li>Pass Multidimensional Arrays to a Function (Truyền mảng đa chiều vào hàm)</li>
+            </ul>
+
+            <h2 class="sub-heading">
+                <br>Truyền riêng lẻ các phần tử
+            </h2>
+
+            <img id="vd-img" src="./assets/images/multi-array4.png" alt="ví dụ multi array 4" width="100%">
+
+            <span><br><strong>Kết quả</strong></span>
+            <img id="vd-img" src="./assets/images/ketqua-multi-array2.png" alt="kết quả multi array 4" width="100%">
+
+            <p class="blog-text">
+                <br>Hàm display đã được truyền tham số  giống như cách chúng ta truyền các biến cho hàm
+            </p>
+
+            <span><br><i>//chuyền vào phần tử thứ nhất và phần tử thứ 3 vào hàm display()</i></span>
+            <img id="vd-img" src="./assets/images/multi-array5.png" alt="ví dụ multi array 5">
+
+            <span>
+                <br>Chúng ta có thể thấy điều này trong định nghĩa hàm display(), trong đó các tham 
+                số của hàm là các biến riêng lẻ:
+            </span>
+            <img id="vd-img" src="./assets/images/multi-array6.png" alt="ví dụ multi array 6">
+
+            <h2 class="sub-heading">
+                <br>Truyền mảng vào hàm
+            </h2>
+
+            <span><br><strong>Ví dụ</strong></span>
+            <img id="vd-img" src="./assets/images/multi-array7.png" alt="ví dụ multi array 7">
+
+            <span><br><strong>Kết quả</strong></span>
+            <img id="vd-img" src="./assets/images/arr-fn8.png" alt="ví dụ fn array 8">
+
+            <span>
+                <br>Để truyền toàn bộ mảng cho một hàm, ta chỉ truyền tên của mảng vào hàm 
+                (chỉ truyền num chứ không truyền num[]).
+            </span>
+            <img id="vd-img" src="./assets/images/arr-fn9.png" alt="ví dụ fn array 9">
+
+            <span>
+                <br><i>lưu ý việc sử dụng [] trong khai báo hàm vì điều này đồng nghĩa việc ta đang thông 
+                  báo cho trình biên dịch là ta đang truyền mảng một chiều cho hàm.</i>
+            </span>
+            <img id="vd-img" src="./assets/images/arr-fn10.png" alt="ví dụ fn array 10">
+
+            <h2 class="sub-heading">
+                <br>Truyền mảng đa chiều vào hàm
+            </h2>
+
+            <p class="blog-text">
+                <br>Để truyền mảng nhiều chiều cho một hàm, ta chỉ truyền tên của mảng vào hàm 
+                (tương tự như mảng một chiều).
+            </p>
+
+            <span><br><strong>Ví dụ</strong></span>
+            <img id="vd-img" src="./assets/images/arr-fn11.png" alt="ví dụ multi array 11">
+
+            <span><br><strong>Két quả</strong></span>
+            <img id="vd-img" src="./assets/images/arr-fn12.png" alt="ví dụ multi array 12">
+
+            <span><br>Khi truyền mảng hai chiều, không bắt buộc phải chỉ định số hàng trong mảng. 
+              Tuy nhiên, số lượng cột phải luôn được chỉ định.</span>
+            <img id="vd-img" src="./assets/images/arr-fn12-2.png" alt="ví dụ multi array 12-2">
+
+            <p class="blog-text">
+                <br>Trong ngôn ngữ C, có một kiểu dữ liệu gọi là kiểu char (kiểu ký tự) ( char là viết 
+                tắt của character). Đây là kiểu dữ liệu có kích thước bộ nhớ là 1 byte. Vì 1 byte là 
+                đơn vị nhỏ nhất nên có thể nói char là loại có kích thước bộ nhớ nhỏ nhất.
+                Khi chúng ta nối các ký tự (char) trong C lại với nhau thì sẽ được một chuỗi ký tự hay 
+                còn gọi là chuỗi string trong c. Và bằng cách sử dụng chuỗi ký tự này, chúng ta có thể 
+                tạo ra được chuỗi trong C.
+            </p>
+
+
+          </section>
+
+          <div class="post-changing">
+            <div class="post-changing-nav post-left">
+              <span class="header-left">Bài trước</span>
+              <div class="post-title">
+                <a href="string-array.html">Mảng ký tự</a>
+              </div>
+            </div>
+            <div class="post-changing-nav post-right">
+              <span class="header-right">Bài tiếp theo</span>
+              <div class="post-title">
+                <a href="pointer.html">Giới thiệu con trỏ</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </article>
+    
+
+      </div>
+
+      <div class="sidenav">
+
+        <p class="sidenav-header">Đổi bài</p>
+  
+        <button type="button" class="collapsible">Giới thiệu</button>
+        <div class="subnav-item">
+          <ul id="list">
+            <li><a href="gioi_thieu.html">Giới thiệu ngôn ngữ C</a></li>
+          
+          </ul>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Căn bản trong C</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ctrinh.html">Cấu trúc chương trình trong C</a>
+          <a href="variable.html">Biến</a>
+          <a href="Input.html">Input trong C</a>
+          <a href="Output.html">Output trong C</a>
+          <a href="arithmetic.html">Các loại toán tử</a>
+          <a href="ep_kieu.html">Ép kiểu</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Câu điều kiện trong C</button>
+        <div class="subnav-item">
+          <a href="If_statement.html">If</a>
+          <a href="If-else_statement.html">if-else</a>
+          <a href="cau_truc_lenh_long_nhau.html">Cấu trúc lệnh lồng nhau</a>
+          <a href="switch_case.html">Switch-case</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Vòng lặp</button>
+        <div class="subnav-item">
+          <a href="while.html">While</a>
+          <a href="do_while.html">Do-While</a>
+          <a href="break.html">Câu lệnh "break"</a>
+          <a href="for.html">For</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Hàm</button>
+        <div class="subnav-item">
+          <a href="cau_truc_ham.html">Cấu trúc Hàm</a>
+          <a href="parameter.html">Tham số và đối số</a>
+          <a href="return-value.html">Giá trị trả về của Hàm</a>
+          <a href="phanloai.html">Phân loại Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Mảng</button>
+        <div class="subnav-item">
+          <a href="array.html">Giới thiệu mảng</a>
+          <a href="multi-array.html">Mảng đa chiều</a>
+          <a href="string-array.html">Mảng ký tự</a>
+          <a href="array-function.html">Truyền mảng vào Hàm</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Con trỏ</button>
+        <div class="subnav-item">
+          <a href="pointer.html">Giới thiệu con trỏ - Pointer</a>
+          <a href="pointer-operation.html">Thao tác với con trỏ</a>
+          <a href="pointer-array.html">Quan hệ giữa Mảng & Con trỏ</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Đọc - Ghi file</button>
+        <div class="subnav-item">
+          <a href="file1.html">Phân loại file</a>
+          <a href="file2.html">Các thao tác với file</a>
+          <a href="file3.html">Đọc ghi file văn bản</a>
+          <a href="file4.html">Dọc ghi file Binary</a>
+  
+        </div>
+  
+        <button type="button" class="collapsible">Thực hành</button>
+        <div class="subnav-item">
+          <a href="practice1.html">Ex1</a>
+          <a href="practice2.html">Ex2</a>
+          <a href="practice3.html">Ex3</a>
+          <a href="practice4.html">Ex4</a>
+          <a href="practice5.html">Ex5</a>
+          <a href="practice6.html">Ex6</a>
+  
+        </div>
+        
+  
+      </div>
+
+    </section>
+
+    
+
+
+    
+    
+    </main>
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-grid">
+
+        <div class="grid-item">
+
+          <div class="footer-logo">
+            <img src="./assets/images/C-Learning-logofooter.png" alt="educator logo white" width="192" height="46">
+          </div>
+
+          
+          
+          <p class="footer-text">
+            CLearning là dự án của team SixThố - SE1735, thuộc môn SSG104, với mục đích giúp đỡ các 
+            sinh viên nhập môn lập trình C một cách dễ dàng nhất có thể. Do đây là dự án đầu tiên của
+            nhóm, cũng như là của cá nhân mình - Vương Viết Nam - nên mọi thiếu sót về công nghệ mong mọi người
+            thông cảm. Mình xin cảm ơn !
+          </p>
+
+
+        </div>
+        
+        <ul class="grid-item">
+              
+
+          <h4 class="item-heading">Our Link</h4>
+
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#about">About Us</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#contact">Contact Us</a>
+          </li>
+
+          <li class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100086707472799" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+          </li>
+
+        </ul>
+        
+      </div>
+
+      <p class="copyright">
+        Copyright © 2022 
+      </p>
+
+    </footer>
+
+  </div>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
